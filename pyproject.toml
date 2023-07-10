@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pyutility"
+version = "0.1.0"
+description = "A handy collection of helper functions, decorators, and utilities designed to streamline and simplify your Python 🐍 development experience. It provides powerful tools to make your code cleaner, more readable, and easier to debug."
+authors = ["JasGujral <jasmeet.gujral@mostacktechnology.com>"]
+license = "./LICENSE"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
