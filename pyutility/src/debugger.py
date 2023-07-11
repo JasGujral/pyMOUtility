@@ -103,7 +103,6 @@ class FunctionCounter:
 
     def __call__(self, *args: Any, **kwargs: Any) -> Any:
         self.function_counts[self.func.__name__] += 1
-        print(f"Call {self.function_counts[self.func.__name__]} of {self.func.__name__!r}")
         return self.func(*args, **kwargs)
 
     @classmethod
