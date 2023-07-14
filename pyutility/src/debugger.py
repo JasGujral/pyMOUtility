@@ -5,6 +5,7 @@ from typing import Callable, Any, Union, Dict
 from functools import wraps
 import logging
 import time
+import inspect
 
 
 def timeit(output: Union[logging.Logger, Callable[..., None]]):
@@ -60,19 +61,19 @@ def debugger(output: Union[logging.Logger, Callable[..., None]]):
         """
         Decorator function.
         """
+        func_sig = inspect.signature(func)
         @wraps(func)
         def wrapper_debug(*args, **kwargs) -> Any:
             """
             Wrapper function.
             """
-            args_repr = [repr(a) for a in args]                      
-            kwargs_repr = [f"{k}={v!r}" for k, v in kwargs.items()]  
-            signature = ", ".join(args_repr + kwargs_repr)           
+            bound_args = func_sig.bind(*args, **kwargs)
+            bound_args.apply_defaults()        
             
             if isinstance(output, logging.Logger):
-                output.debug(f"Calling {func.__name__}({signature})")
+                output.debug(f"Calling {func.__name__}({bound_args.arguments})")
             else:
-                output(f"Calling {func.__name__}({signature})")
+                output(f"Calling {func.__name__}({bound_args.arguments})")
 
             result = func(*args, **kwargs)
 
