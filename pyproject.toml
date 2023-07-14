@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pyutility"
+name = "pymoutility"
 version = "0.1.0"
 description = "A handy collection of helper functions, decorators, and utilities designed to streamline and simplify your Python 🐍 development experience. It provides powerful tools to make your code cleaner, more readable, and easier to debug."
 authors = ["JasGujral <jasmeet.gujral@mostacktechnology.com>"]
