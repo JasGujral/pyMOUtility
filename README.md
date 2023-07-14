@@ -1,16 +1,16 @@
-# 🚀 PyUtility
+# 🚀 PyMOUtility
 
-A handy collection of helper functions, decorators, and utilities designed to streamline and simplify your Python 🐍 development experience. PyUtility is an open-source project that provides powerful tools to make your code cleaner, more readable, and easier to debug.
+A handy collection of helper functions, decorators, and utilities designed to streamline and simplify your Python 🐍 development experience. PyMOUtility is an open-source project that provides powerful tools to make your code cleaner, more readable, and easier to debug.
 
 ## ⚙️ Installation
 
-PyUtility uses [Poetry](https://python-poetry.org/docs/) for dependency management. To install PyUtility, make sure you have Python 3.7 or higher and Poetry installed on your system.
+PyMOUtility uses [Poetry](https://python-poetry.org/docs/) for dependency management. To install PyMOUtility, make sure you have Python 3.7 or higher and Poetry installed on your system.
 
 First, clone the repository:
 
 ```bash
-git clone https://github.com/username/pyUtility.git
-cd pyUtility
+git clone https://github.com/username/pyMOUtility.git
+cd pyMOUtility
 ```
 
 Please replace 'username' with the actual username of the repository.
@@ -23,7 +23,7 @@ poetry install
 
 This will create a virtual environment and install all the necessary dependencies.
 
-You can then use PyUtility within this virtual environment or build it for usage elsewhere.
+You can then use PyMOUtility within this virtual environment or build it for usage elsewhere.
 
 If you wish to build a distribution package, use:
 
@@ -34,10 +34,10 @@ poetry build
 This will produce a .whl file in the `dist/` directory that you can install using pip:
 
 ```bash
-pip install dist/pyUtility-*.whl
+pip install dist/pyMOUtility-*.whl
 ```
 
-Please replace '*' with the actual version of the PyUtility package.
+Please replace '*' with the actual version of the PyMOUtility package.
 
 Remember to always activate the virtual environment created by Poetry before using the package:
 
@@ -55,10 +55,10 @@ This command will spawn a shell within the virtual environment. If you want to l
 
 ## 📖 Usage
 
-Import the required utility from the PyUtility package. Here's a simple example:
+Import the required utility from the PyMOUtility package. Here's a simple example:
 
 ```python
-from pyUtility.decorators import timeit
+from pymoutility.decorators import timeit
 
 @timeit(print)
 def my_function():
@@ -69,22 +69,22 @@ my_function() # this will print the time taken to execute my_function
 
 ## 📚 Detailed Documentation
 
-For a complete understanding of how to use PyUtility, refer to the [documentation](LINK_TO_DOCUMENTATION_HERE) (to be updated).
+For a complete understanding of how to use PyMOUtility, refer to the [documentation](LINK_TO_DOCUMENTATION_HERE) (to be updated).
 
 ## 💡 Examples
 
-To see PyUtility in action, check out these [examples](./pyutility/notebooks/Examples.ipynb).
+To see PyMOUtility in action, check out these [examples](./pymoutility/notebooks/Examples.ipynb).
 
 
 ## 👥 Contributing
 
-PyUtility is an open-source project, and we welcome contributions of all sorts! Here are some ways you can contribute:
+PyMOUtility is an open-source project, and we welcome contributions of all sorts! Here are some ways you can contribute:
 
 - **Improving Documentation**: If you find any issues in the documentation or think it can be improved, feel free to make changes and submit a pull request.
 
-- **Reporting Bugs**: If you find a bug, please create an issue detailing what you found. Include as much detail as possible, such as the Python version, PyUtility version, and the steps to reproduce the bug.
+- **Reporting Bugs**: If you find a bug, please create an issue detailing what you found. Include as much detail as possible, such as the Python version, PyMOUtility version, and the steps to reproduce the bug.
 
-- **Feature Requests**: If you think a feature could be useful in PyUtility, please create an issue describing the feature and why it would be beneficial.
+- **Feature Requests**: If you think a feature could be useful in PyMOUtility, please create an issue describing the feature and why it would be beneficial.
 
 - **Writing Code**: If you want to contribute code to fix bugs, add features, or enhance the project in any way, here's a basic workflow:
     1. Fork the repository and clone it locally.
@@ -124,7 +124,7 @@ python -m pytest "tests"
 
 ## 📜 Changelog
 
-See the [CHANGELOG]() for a history of notable changes to PyUtility.
+See the [CHANGELOG]() for a history of notable changes to PyMOUtility.
 
 ## ⚖️ License
 
